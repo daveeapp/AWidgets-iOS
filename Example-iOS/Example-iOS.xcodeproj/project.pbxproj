@@ -55,6 +55,7 @@
 		155618222434F489009504D8 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155617FC2434F488009504D8 /* ConstraintMaker.swift */; };
 		155618232434F489009504D8 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155617FD2434F488009504D8 /* ConstraintDirectionalInsets.swift */; };
 		155618242434F489009504D8 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155617FE2434F489009504D8 /* ConstraintLayoutGuideDSL.swift */; };
+		155618322435D8B8009504D8 /* CarouselEmoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155618312435D8B8009504D8 /* CarouselEmoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		155617FD2434F488009504D8 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		155617FE2434F489009504D8 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		155617FF2434F489009504D8 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		155618312435D8B8009504D8 /* CarouselEmoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEmoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			children = (
 				15051EE3243257F00012190F /* SegmentDemoVC.swift */,
 				15051EE4243257F00012190F /* SegmentDemoVC.xib */,
+				155618312435D8B8009504D8 /* CarouselEmoVC.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				15051EAB2432553E0012190F /* ViewController.swift in Sources */,
 				1556180A2434F489009504D8 /* ConstraintDirectionalInsetTarget.swift in Sources */,
 				155618192434F489009504D8 /* ConstraintMakerRelatable.swift in Sources */,
+				155618322435D8B8009504D8 /* CarouselEmoVC.swift in Sources */,
 				155618242434F489009504D8 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				15051EA72432553E0012190F /* AppDelegate.swift in Sources */,
 				1556180E2434F489009504D8 /* ConstraintConstantTarget.swift in Sources */,

@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var tableView: UITableView!
     
-    var sections: [[String]] = [["ASegmentControl"]]
+    var sections: [[String]] = [["ASegmentControl", "ACarouselView"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             make.leading.trailing.bottom.equalToSuperview()
             make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
         }
-        
-        
         
     }
     
@@ -52,9 +50,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = SegmentDemoVC()
-//        self.present(vc, animated: true, completion: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        let title = self.title(at: indexPath)
+        
+        if title.elementsEqual("ASegmentControl") {
+            self.navigationController?.pushViewController(SegmentDemoVC(), animated: true)
+            
+        } else if title.elementsEqual("ACarouselView") {
+            self.navigationController?.pushViewController(CarouselEmoVC(), animated: true)
+        }
+        
     }
 }
 
