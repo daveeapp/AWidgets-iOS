@@ -9,20 +9,52 @@
 import UIKit
 import AWidgets
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var segment2: ASegment!
+    var tableView: UITableView!
+    
+    var sections: [[String]] = [["ASegmentControl"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.segment2 = ASegment()
-        self.view.addSubview(self.segment2)
+        self.tableView = UITableView(frame: .zero, style: .grouped)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        self.view.addSubview(self.tableView)
+        self.tableView.snp.makeConstraints { (make) in
+            make.leading.trailing.bottom.equalToSuperview()
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+        }
         
-        self.segment2.frame = CGRect(x: 0, y: 100, width: 240, height: 64)
+        
+        
     }
-
-
+    
+    func title(at indexPath: IndexPath) -> String {
+        return self.sections[indexPath.section][indexPath.row]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.sections[section].count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        cell.textLabel?.text = self.title(at: indexPath)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SegmentDemoVC()
+//        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
