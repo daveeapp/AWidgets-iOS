@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var tableView: UITableView!
     
-    var sections: [[String]] = [["ASegmentControl", "ACarouselView"]]
+    var sections: [[String]] = [["ASegmentControl", "ACarouselView", "ARefreshView"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +51,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let title = self.title(at: indexPath)
-        
+
         if title.elementsEqual("ASegmentControl") {
             self.navigationController?.pushViewController(SegmentDemoVC(), animated: true)
-            
+
         } else if title.elementsEqual("ACarouselView") {
             self.navigationController?.pushViewController(CarouselEmoVC(), animated: true)
+        } else if title.elementsEqual("ARefreshView") {
+            self.navigationController?.pushViewController(RefreshDemoVC(), animated: true)
         }
         
     }

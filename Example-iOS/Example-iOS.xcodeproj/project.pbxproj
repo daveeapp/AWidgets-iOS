@@ -56,6 +56,7 @@
 		155618232434F489009504D8 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155617FD2434F488009504D8 /* ConstraintDirectionalInsets.swift */; };
 		155618242434F489009504D8 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155617FE2434F489009504D8 /* ConstraintLayoutGuideDSL.swift */; };
 		155618322435D8B8009504D8 /* CarouselEmoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155618312435D8B8009504D8 /* CarouselEmoVC.swift */; };
+		15FABF59243A044700A4245D /* RefreshDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FABF58243A044700A4245D /* RefreshDemoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		155617FE2434F489009504D8 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		155617FF2434F489009504D8 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
 		155618312435D8B8009504D8 /* CarouselEmoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselEmoVC.swift; sourceTree = "<group>"; };
+		15FABF58243A044700A4245D /* RefreshDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshDemoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				15051EE3243257F00012190F /* SegmentDemoVC.swift */,
 				15051EE4243257F00012190F /* SegmentDemoVC.xib */,
 				155618312435D8B8009504D8 /* CarouselEmoVC.swift */,
+				15FABF58243A044700A4245D /* RefreshDemoVC.swift */,
 			);
 			path = example;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				155618222434F489009504D8 /* ConstraintMaker.swift in Sources */,
 				155618122434F489009504D8 /* ConstraintRelation.swift in Sources */,
 				155618142434F489009504D8 /* ConstraintDescription.swift in Sources */,
+				15FABF59243A044700A4245D /* RefreshDemoVC.swift in Sources */,
 				155618182434F489009504D8 /* Debugging.swift in Sources */,
 				1556181A2434F489009504D8 /* ConstraintMultiplierTarget.swift in Sources */,
 				1556181E2434F489009504D8 /* ConstraintMakerPriortizable.swift in Sources */,

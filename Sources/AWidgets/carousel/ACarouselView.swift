@@ -215,15 +215,15 @@ extension ACarouselView {
     
     
     func startTimer() {
-//        invalidateTimer()
-//
-//        self.timer = Timer(timeInterval: timeInterval, repeats: true, block: { [weak self] (timer) in
-//            guard let strongSelf = self else {
-//                return
-//            }
-//            strongSelf.scrollToNextPage()
-//        })
-//        RunLoop.main.add(self.timer!, forMode: .common)
+        invalidateTimer()
+
+        self.timer = Timer(timeInterval: timeInterval, repeats: true, block: { [weak self] (timer) in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.scrollToNextPage()
+        })
+        RunLoop.main.add(self.timer!, forMode: .common)
     }
     
     func invalidateTimer() {
